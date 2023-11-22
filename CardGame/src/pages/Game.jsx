@@ -32,6 +32,10 @@ function Game() {
     return cards;
   }
 
+  function playCard() {
+    console.log("playing card");
+  }
+
   return (
     <>
       <h1>Game {id}</h1>
@@ -47,7 +51,7 @@ function Game() {
               {cards.map((card) => (
                 <Card
                   card={card}
-                  actionButton={{ title: "Play", onClick: playCard() }}
+                  actionButton={{ title: "Play", onClick: playCard }}
                   key={card.id}
                 />
               ))}
