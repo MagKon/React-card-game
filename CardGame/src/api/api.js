@@ -87,4 +87,8 @@ export const createCard = async (card) => {
   }).then((res) => res.json());
 };
 
+export const getCardById = async (id) => {
+  return await fetch(BASE_URL + "card/" + id).then((res) => res.json());
+};
+
 // #endregion

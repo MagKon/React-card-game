@@ -37,6 +37,10 @@ function CardMaker() {
     setCards([...cards, newCard]);
   }
 
+  function deleteCard(id) {
+    console.log("deleting card");
+  }
+
   return (
     <>
       <h1>Card Maker</h1>
@@ -91,7 +95,11 @@ function CardMaker() {
       <hr></hr>
       <div className="row">
         {cards.map((card) => (
-          <Card card={card} key={card.id} />
+          <Card
+            card={card}
+            actionButton={{ title: "Delete", onClick: deleteCard }}
+            key={card.id}
+          />
         ))}
       </div>
     </>

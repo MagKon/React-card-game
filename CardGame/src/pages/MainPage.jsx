@@ -109,6 +109,7 @@ function MainPage() {
                       <button
                         className="btn btn-primary"
                         onClick={() =>
+                          sessionStorage.setItem("game", JSON.stringify(game)) &
                           window.location.replace(`/game/${game.id}`)
                         }
                       >
