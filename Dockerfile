@@ -5,7 +5,7 @@ FROM node:latest
 WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json to the container
-COPY package*.json ./
+COPY CardGame/package*.json ./
 
 # Install dependencies
 RUN npm install
