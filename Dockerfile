@@ -11,10 +11,10 @@ COPY CardGame/package*.json ./
 RUN npm install
 
 # Copy the rest of the application code to the container
-COPY . .
+COPY CardGame/ .
 
 # Build the Vite app
-RUN npm run dev
+RUN npm run build
 
 # Install 'pm2' and 'serve' globally (if not already installed)
 RUN npm install -g serve
