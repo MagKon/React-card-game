@@ -1,5 +1,5 @@
 # Use the official Node image as a base image
-FROM node:20-alpine
+FROM node:lastest
 
 # Set the working directory inside the container
 WORKDIR /usr/src/app
