@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the Vite app
-RUN npm run build
+RUN npm run dev
 
 # Install 'pm2' and 'serve' globally (if not already installed)
 RUN npm install -g serve
